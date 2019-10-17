@@ -21,8 +21,3 @@ strategy:
   uses: wbari/mongoDB@v0.1
   with:
     mongoDBVersion: ${{ matrix.mongodb-version }}
-
-
-branding:
-  icon: 'activity'  
-  color: 'white'
