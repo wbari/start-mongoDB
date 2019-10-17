@@ -6,7 +6,7 @@ Starts the specific version of MongoDB as a detach Docker container
 
 ### `mongoDbVersion`
 
-**Required** The version of mongoDB. Default `"3.4"`.
+**Required** The version of mongoDB. Default `"3.6"`.
 
 
 ## Example usage
