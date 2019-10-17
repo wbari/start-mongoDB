@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  StartMongoDBAsDocker:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mongodb-version: ["4.0", "4.2"] 
+    name: Start MongoDB As Docker
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Start MongoDB As Docker
+        uses: ./
+        with:
+          mongoDBVersion: ${{ matrix.mongodb-version }}
