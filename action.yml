@@ -1,0 +1,10 @@
+name: 'Start MongoDB As Docker'
+description: 'Starts MongoDB specific version in Background as a Docker container'
+inputs:
+  mongoDBVersion:  
+    description: 'MongoDB Version'
+    required: true
+    default: '3.6'
+runs:
+  using: 'node12'
+  main: 'runMongoDBAsDocker.js'
