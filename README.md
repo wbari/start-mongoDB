@@ -20,7 +20,7 @@ strategy:
 ...
 ...
 - name: Launch MongoDB
-  uses: wbari/start-mongoDB@v0.1
+  uses: wbari/start-mongoDB@v0.2
   with:
     mongoDBVersion: ${{ matrix.mongodb-version }}
 ```
