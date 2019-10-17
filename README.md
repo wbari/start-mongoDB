@@ -10,6 +10,8 @@ Starts the specific version of MongoDB as a detach Docker container
 
 
 ## Example usage
+
+```
 ...
 ...
 strategy:
@@ -21,3 +23,4 @@ strategy:
   uses: wbari/mongoDB@v0.1
   with:
     mongoDBVersion: ${{ matrix.mongodb-version }}
+```
